@@ -26,9 +26,7 @@ matrix:
 
 branches:
   only:
-    - master
-    - jruby-1_7
-    - /^test-.*$/
+    - krypt_syncup
 
 before_install:
   - if [[ $TRAVIS_JDK_VERSION = 'oraclejdk8' ]]; then sudo apt-get update; sudo apt-get install oracle-java8-installer; else true; fi
